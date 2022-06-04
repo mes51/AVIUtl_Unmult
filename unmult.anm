@@ -1,0 +1,9 @@
+require("Unmult")
+
+obj.pixeloption("type", "rgb")
+
+local data, w, h = obj.getpixeldata()
+
+Unmult.unmult(data, w, h)
+
+obj.putpixeldata(data)
